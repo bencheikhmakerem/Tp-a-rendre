@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import Exo7.Joueur;
+
 public class RegistreJoueurs {
 	
 	private Map<Integer,List<Joueur>> map = new HashMap<Integer,List<Joueur>>();
@@ -30,7 +32,7 @@ public class RegistreJoueurs {
 	public void addJoueur(Joueur j)
 	{
 		int decennie;
-		decennie=j.getAnneeDeNaissance()/10;
+		decennie=j.getAnneeDeNaissance()-j.getAnneeDeNaissance()%10;
 		if(map.get(decennie)==null)
 		{
 			List<Joueur> val=new ArrayList<Joueur>();
@@ -67,6 +69,11 @@ public class RegistreJoueurs {
 	public String toString() {
 		return "RegistreJoueurs [map=" + map + "]";
 	}
+
+	
+
+
+	
 	
 
 

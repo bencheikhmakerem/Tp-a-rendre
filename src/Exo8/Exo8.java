@@ -10,7 +10,7 @@ public class Exo8 {
 	public static void main(String[] args) 
 	{
 		List<Joueur> players=new ArrayList<>();
-		List<Joueur> listeJ;
+		//List<Joueur> listeJ;
 	    Map<Integer,List<Joueur>> map = new HashMap<Integer,List<Joueur>>();
 	    RegistreJoueurs registre=new RegistreJoueurs();
 	    

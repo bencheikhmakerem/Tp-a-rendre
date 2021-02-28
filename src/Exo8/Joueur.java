@@ -7,7 +7,6 @@ public class Joueur {
 	private int anneeDeNaissance;
 	
 	public Joueur(String name, int anneeDeNaissance) {
-		super();
 		this.name = name;
 		this.anneeDeNaissance = anneeDeNaissance;
 	}
